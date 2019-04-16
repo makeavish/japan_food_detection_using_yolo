@@ -72,14 +72,13 @@ The data file to tell where to find the training and validation paths, `food100.
 * names = <path> is the file that list class names
 * backup = <path> is where the intermediate `.weights` and final `.weights` files will be written
 
-Obviously, change the data <path> to your specific data locations.
 
 ### Traning Dataset File
-The `train.txt` file list of all training images, one image per line. For example,
+The `train.txt` file list of all training images, one image per line.
 
 
 ### Validating Dataset File
-The `test.txt` file list of all validating images, one image per line. For example,
+The `test.txt` file list of all validating images, one image per line.
 
 
 ### Class Name File
