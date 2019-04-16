@@ -39,8 +39,6 @@ DarkNet YOLO (both v2 and v3) expected the class number is 0 based, that the foo
 <object-class-id> <center-X> <center-Y> <width> <height>
 ```
 
-> Originally, I forgot to subtract 1 for the <object-class-id>; that's make me think the method is not working and almost gives up! After re-align to 0 based <object-class-id>, the detection shows correct results.
-
 #### Bounding Box Description File
 DarkNet YOLO expected a bounding box `.txt`-file for each `.jpg`-image-file - in the same directory and with the same name, but with `.txt`-extension, and put to file: object number and object coordinates on this image.
 
@@ -80,14 +78,9 @@ Obviously, change the data <path> to your specific data locations.
 The `train.txt` file list of all training images, one image per line. For example,
 
 
-
-There should be no image coming from the validating dataset.
-
 ### Validating Dataset File
 The `test.txt` file list of all validating images, one image per line. For example,
 
-
-There should be no image coming from the training dataset.
 
 ### Class Name File
 The class names specified in, `food100.names`
