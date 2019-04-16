@@ -1,4 +1,4 @@
-## Food100 YOLO Training Tools
+## Food Detection using YOLOv2
 The following instructions concentrated on describing YOLO v2 setup and training.
 To get DarkNet YOLO training to work, we needs
 
