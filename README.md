@@ -1,5 +1,3 @@
-This is the set of tools and configurations used by the YOLO Real-Time Food Detection article at <http://bennycheung.github.io/yolo-for-real-time-food-detection>
-
 ## Food100 YOLO Training Tools
 The following instructions concentrated on describing YOLO v2 setup and training.
 To get DarkNet YOLO training to work, we needs
@@ -70,14 +68,6 @@ However, YOLO expected each `.jpg`-image-file has a corresponding bbox descripti
 ### Data Location File
 The data file to tell where to find the training and validation paths, `food100.data`
 
-```
-classes = 100
-train = /Users/bcheung/dev/ML/darknet/data/food100/train.txt
-valid = /Users/bcheung/dev/ML/darknet/data/food100/test.txt
-names = /Users/bcheung/dev/ML/darknet/data/food100/food100.names
-backup = backup
-```
-
 * classes = 100 is the number of classes, should equal to line counts of class name file
 * train = <path> is the file list of all training images, one image per line
 * valid = <path> is the file list of all validating images, one image per line
@@ -89,24 +79,13 @@ Obviously, change the data <path> to your specific data locations.
 ### Traning Dataset File
 The `train.txt` file list of all training images, one image per line. For example,
 
-```
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6164.jpg
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6170.jpg
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6158.jpg
-...
-```
+
 
 There should be no image coming from the validating dataset.
 
 ### Validating Dataset File
 The `test.txt` file list of all validating images, one image per line. For example,
 
-```
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6990.jpg
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6149.jpg
-/Users/bcheung/dev/ML/darknet/data/food100/images/61/6099.jpg
-...
-```
 
 There should be no image coming from the training dataset.
 
