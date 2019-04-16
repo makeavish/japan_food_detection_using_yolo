@@ -1,0 +1,5 @@
+classes= 100
+train  = /home/vishal.sharma.17csc/Vishal/food_detection/food100/train.txt  
+valid  = /home/vishal.sharma.17csc/Vishal/food_detection/food100/test.txt  
+names = /home/vishal.sharma.17csc/Vishal/food_detection/food100/food.names
+backup = backup
