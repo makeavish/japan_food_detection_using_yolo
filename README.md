@@ -129,5 +129,6 @@ Further editing to the configuration file `classes` and `filters` specifications
 edit to line 237: filters=525
 edit to line 244: classes=100
 ```
-
+Credits:
+[How to train a Yolov2 model](https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/)
 Special Thanks to Benny Cheung for his help.
